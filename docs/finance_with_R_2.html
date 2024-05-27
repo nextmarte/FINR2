@@ -9,7 +9,7 @@
 <meta name="author" content="Ariel Levy">
 <meta name="dcterms.date" content="2024-05-27">
 
-<title>Finance with R Aula 2</title>
+<title>Finanças com R 2 - Finance with R Aula 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,59 +59,94 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="finance_with_R_2_files/libs/clipboard/clipboard.min.js"></script>
-<script src="finance_with_R_2_files/libs/quarto-html/quarto.js"></script>
-<script src="finance_with_R_2_files/libs/quarto-html/popper.min.js"></script>
-<script src="finance_with_R_2_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="finance_with_R_2_files/libs/quarto-html/anchor.min.js"></script>
-<link href="finance_with_R_2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="finance_with_R_2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="finance_with_R_2_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="finance_with_R_2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="finance_with_R_2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="finance_with_R_2_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="finance_with_R_2_files/libs/jquery-3.5.1/jquery.min.js"></script>
-<script src="finance_with_R_2_files/libs/proj4js-2.3.15/proj4.js"></script>
-<link href="finance_with_R_2_files/libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/highcharts.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/highcharts-3d.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/highcharts-more.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/stock.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/map.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/data.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/exporting.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/drilldown.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/item-series.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/annotations.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/export-data.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/funnel.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/heatmap.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/treemap.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/sankey.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/organization.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/streamgraph.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/sunburst.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/vector.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/wordcloud.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/xrange.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/tilemap.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/venn.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/gantt.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/timeline.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/bullet.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/coloraxis.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/dumbbell.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/lollipop.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/series-label.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/plugins/motion.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/custom/reset.js"></script>
-<script src="finance_with_R_2_files/libs/highcharts-9.3.1/modules/boost.js"></script>
-<script src="finance_with_R_2_files/libs/highchart-binding-0.9.4/highchart.js"></script>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -145,10 +180,41 @@ window.Quarto = {
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Finanças com R 2</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./finance_with_R_2.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -242,9 +308,9 @@ window.Quarto = {
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(asset_monthly_returns_xts,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                  SPY         EFA        IJS          EEM           AGG
-2013-01-31 0.05119017  0.03728487 0.05351536 -0.002930988 -0.0062116155
-2013-02-28 0.01275838 -0.01288575 0.01630738 -0.022840437  0.0059080809
-2013-03-31 0.03797140  0.01305396 0.04107985 -0.010182888  0.0009853977</code></pre>
+2013-01-31 0.05119037  0.03728468 0.05351637 -0.002930988 -0.0062117051
+2013-02-28 0.01275894 -0.01288593 0.01630662 -0.022840549  0.0059086279
+2013-03-31 0.03797070  0.01305414 0.04107953 -0.010182666  0.0009854878</code></pre>
 </div>
 </div>
 </section>
@@ -278,10 +344,10 @@ window.Quarto = {
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">colnames&lt;-</span><span class="st">`</span>(<span class="st">"returns"</span>)</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(portfolio_returns_xts_rebalanced_monthly,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                returns
-2013-01-31  0.031614472
-2013-02-28 -0.000747646
-2013-03-31  0.019034273</code></pre>
+<pre><code>                 returns
+2013-01-31  0.0316146679
+2013-02-28 -0.0007476691
+2013-03-31  0.0190341328</code></pre>
 </div>
 </div>
 </section>
@@ -301,9 +367,9 @@ window.Quarto = {
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(asset_monthly_returns_long_tbl, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        date asset    returns
-1 2013-01-31   SPY 0.05119017
-2 2013-02-28   SPY 0.01275838
-3 2013-03-31   SPY 0.03797140</code></pre>
+1 2013-01-31   SPY 0.05119037
+2 2013-02-28   SPY 0.01275894
+3 2013-03-31   SPY 0.03797070</code></pre>
 </div>
 </div>
 <p>Depois adicionamos a cada observação seu respectivo peso utilizando a função <em>dplyr::case_when( )</em>, digite no console: ?case_when e entenda sua operação.</p>
@@ -365,9 +431,9 @@ window.Quarto = {
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(assets_daily_returns_long,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        date asset      returns
-1 2013-01-02   SPY  0.025306991
-2 2013-01-03   SPY -0.002261748
-3 2013-01-04   SPY  0.004381950</code></pre>
+1 2013-01-02   SPY  0.025307188
+2 2013-01-03   SPY -0.002262197
+3 2013-01-04   SPY  0.004382400</code></pre>
 </div>
 </div>
 </section>
@@ -497,8 +563,8 @@ window.Quarto = {
 <span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hc_scrollbar</span>(<span class="at">enabled =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>hc_ativos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="highchart html-widget html-fill-item" id="htmlwidget-b5a5cefeb81426a17b0e" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-b5a5cefeb81426a17b0e">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Monthly Log Returns"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"data":[[1359590400000,0.05119016659448605],[1362009600000,0.01275837891950471],[1364688000000,0.03797140316414782],[1367280000000,0.01921232293661057],[1369958400000,0.02360992307099186],[1372550400000,-0.01334433414509906],[1375228800000,0.0516762970529494],[1377907200000,-0.02999222661301071],[1380499200000,0.03164667459360127],[1383177600000,0.04630641336422636],[1385769600000,0.029637966452988],[1388448000000,0.02592634510577096],[1391126400000,-0.03524807094218174],[1393545600000,0.04551573399852682],[1396224000000,0.008295255331314033],[1398816000000,0.006951620524957125],[1401494400000,0.02320643665170552],[1404086400000,0.02064484252767618],[1406764800000,-0.01343757848212268],[1409443200000,0.03946383748891402],[1412035200000,-0.01379672362443796],[1414713600000,0.02355111812316668],[1417305600000,0.02747174588915335],[1419984000000,-0.002536351594058073],[1422662400000,-0.02962946043627901],[1425081600000,0.0562047040998539],[1427760000000,-0.01570553978603262],[1430352000000,0.00983389684210989],[1433030400000,0.01285603653002565],[1435622400000,-0.02031213291389922],[1438300800000,0.02258947277292012],[1440979200000,-0.06095023751831941],[1443571200000,-0.02551597815036089],[1446249600000,0.0850598317989284],[1448841600000,0.003654896154855924],[1451520000000,-0.0172823719636066],[1454198400000,-0.04978644182199432],[1456704000000,-0.0008264276346338084],[1459382400000,0.06726615534612113],[1461974400000,0.003941364535056113],[1464652800000,0.01701137360387794],[1467244800000,0.003475947446348382],[1469923200000,0.03647119461495674],[1472601600000,0.001197905164247892],[1475193600000,5.785368137978253e-05],[1477872000000,-0.01733744838301898],[1480464000000,0.03683871671001704],[1483142400000,0.02027179580105432],[1485820800000,0.01789490340159161],[1488240000000,0.03929110059259711],[1490918400000,0.001250283276425179],[1493510400000,0.009926086674541645],[1496188800000,0.01411287820429741],[1498780800000,0.006374836486326307],[1501459200000,0.02055424575574305],[1504137600000,0.002917709130371371],[1506729600000,0.02014937827207053],[1509408000000,0.02356403807600582],[1512000000000,0.03056601706658846],[1514678400000,0.01212804695186698]],"name":"SPY"},{"data":[[1359590400000,0.03728486759182159],[1362009600000,-0.01288575119797597],[1364688000000,0.01305396129537617],[1367280000000,0.05018649255639884],[1369958400000,-0.03019058222831683],[1372550400000,-0.0267791415368438],[1375228800000,0.05322868293689109],[1377907200000,-0.01955301844606161],[1380499200000,0.07824933767911468],[1383177600000,0.03260172794217797],[1385769600000,0.005464693882039739],[1388448000000,0.02176138156805885],[1391126400000,-0.0520119737932131],[1393545600000,0.06131105563744432],[1396224000000,-0.004592132807146432],[1398816000000,0.01666697985089338],[1401494400000,0.01595434415177377],[1404086400000,0.009207591073652655],[1406764800000,-0.02603494958454888],[1409443200000,0.001802081419400858],[1412035200000,-0.03882461540440829],[1414713600000,-0.002651414928420914],[1417305600000,0.0006256218277567172],[1419984000000,-0.03992766101424772],[1422662400000,0.006245841466298918],[1425081600000,0.06337794600680247],[1427760000000,-0.01428581621719438],[1430352000000,0.03646574561218752],[1433030400000,0.001954611234601389],[1435622400000,-0.03118229433383146],[1438300800000,0.02031802694859519],[1440979200000,-0.0742511367553329],[1443571200000,-0.04418880817704729],[1446249600000,0.06611981664959243],[1448841600000,-0.007527269743109577],[1451520000000,-0.02331890612609733],[1454198400000,-0.05517713284031911],[1456704000000,-0.03334522571104859],[1459382400000,0.06582124464818451],[1461974400000,0.02221839239807055],[1464652800000,-0.0008556769951664212],[1467244800000,-0.02419417522512624],[1469923200000,0.0397708131517851],[1472601600000,0.005341113226379424],[1475193600000,0.01336783263599406],[1477872000000,-0.02215483663523066],[1480464000000,-0.0178138196493417],[1483142400000,0.02706256889733272],[1485820800000,0.03291195048155338],[1488240000000,0.01190673176332924],[1490918400000,0.03231686738135409],[1493510400000,0.02424144013872187],[1496188800000,0.03542308994883347],[1498780800000,0.002960298939344685],[1501459200000,0.02653394429623224],[1504137600000,-0.0004483356526305826],[1506729600000,0.02361748357346682],[1509408000000,0.01679299393545852],[1512000000000,0.006893827815209752],[1514678400000,0.01348833848262698]],"name":"EFA"},{"data":[[1359590400000,0.05351536437820625],[1362009600000,0.01630738160431533],[1364688000000,0.04107984730808756],[1367280000000,0.001223024571093134],[1369958400000,0.04287013607085211],[1372550400000,-0.001402243416918636],[1375228800000,0.06560335106453952],[1377907200000,-0.03414679452485225],[1380499200000,0.06595799630670141],[1383177600000,0.0348267155958808],[1385769600000,0.04254099234609998],[1388448000000,0.01297536460948923],[1391126400000,-0.03514258613507293],[1393545600000,0.04629688484620553],[1396224000000,0.01340451700562872],[1398816000000,-0.02291745905039166],[1401494400000,0.006224558097944755],[1404086400000,0.03843887382542888],[1406764800000,-0.05067993410230331],[1409443200000,0.04462497624050399],[1412035200000,-0.05942183231416487],[1414713600000,0.07130221400788761],[1417305600000,0.004785185960243021],[1419984000000,0.02561800079184962],[1422662400000,-0.05316241578644998],[1425081600000,0.05856530337147903],[1427760000000,0.0102082042618219],[1430352000000,-0.01824902117001737],[1433030400000,0.007538200965075514],[1435622400000,0.004179894128772066],[1438300800000,-0.02700422459341301],[1440979200000,-0.04616829332950967],[1443571200000,-0.03773451135467798],[1446249600000,0.06565534676595663],[1448841600000,0.02471531267892368],[1451520000000,-0.05081984694065356],[1454198400000,-0.05852449510392177],[1456704000000,0.02081887931700011],[1459382400000,0.09407623703371648],[1461974400000,0.02126720836312979],[1464652800000,0.004406862804228417],[1467244800000,0.008326546395153622],[1469923200000,0.0505863927588972],[1472601600000,0.01132487860153097],[1475193600000,0.008651792844123873],[1477872000000,-0.03741686030198188],[1480464000000,0.133427786308115],[1483142400000,0.03199290402009325],[1485820800000,-0.0120702235424045],[1488240000000,0.01351899433691583],[1490918400000,-0.006511663683031466],[1493510400000,0.005120676458510776],[1496188800000,-0.02260291069210352],[1498780800000,0.02958064337528366],[1501459200000,0.007509493373078824],[1504137600000,-0.027188267091933],[1506729600000,0.08580542607682573],[1509408000000,0.005933362202542369],[1512000000000,0.03760291167782381],[1514678400000,-0.003724243718800646]],"name":"IJS"}],"navigator":{"enabled":false},"scrollbar":{"enabled":false}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"stock","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div class="highchart html-widget html-fill-item" id="htmlwidget-627f85bade273c250e22" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-627f85bade273c250e22">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Monthly Log Returns"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"data":[[1359590400000,0.05119037374773128],[1362009600000,0.01275894132600452],[1364688000000,0.03797070335192476],[1367280000000,0.01921268189184522],[1369958400000,0.02360921766754998],[1372550400000,-0.01334411231043819],[1375228800000,0.05167677099010048],[1377907200000,-0.02999265932364736],[1380499200000,0.03164690820046157],[1383177600000,0.04630652311144789],[1385769600000,0.02963785845413347],[1388448000000,0.02592624323488146],[1391126400000,-0.03524787584918365],[1393545600000,0.04551542054073998],[1396224000000,0.008295453851874246],[1398816000000,0.006951718158705544],[1401494400000,0.02320643440161607],[1404086400000,0.02064493533201239],[1406764800000,-0.0134380402064217],[1409443200000,0.03946384863056562],[1412035200000,-0.01379654630042826],[1414713600000,0.02355121208741218],[1417305600000,0.02747183557904864],[1419984000000,-0.002536264080826633],[1422662400000,-0.02962971779166657],[1425081600000,0.05620461898275808],[1427760000000,-0.01570537169445141],[1430352000000,0.00983389684210989],[1433030400000,0.01285620833900669],[1435622400000,-0.0203123839106969],[1438300800000,0.02258956130114798],[1440979200000,-0.06095006819799409],[1443571200000,-0.02551615385981576],[1446249600000,0.08505964676738786],[1448841600000,0.003655152568024178],[1451520000000,-0.01728262535378589],[1454198400000,-0.04978662332338557],[1456704000000,-0.000825973054300766],[1459382400000,0.06726614922144214],[1461974400000,0.003941278886047339],[1464652800000,0.01701145858171649],[1467244800000,0.003475780043066701],[1469923200000,0.03647153071982068],[1472601600000,0.001197342516601196],[1475193600000,5.793394086395232e-05],[1477872000000,-0.01733689090242696],[1480464000000,0.03683829641893732],[1483142400000,0.02027195489909572],[1485820800000,0.01789474764815902],[1488240000000,0.0392913310594698],[1490918400000,0.001250137169247045],[1493510400000,0.009926159545808],[1496188800000,0.01411273287589432],[1498780800000,0.006374908090811982],[1501459200000,0.02055452855655426],[1504137600000,0.002917639045597609],[1506729600000,0.020149097797725],[1509408000000,0.02356417509238251],[1512000000000,0.03056608119621163],[1514678400000,0.01212804539487822]],"name":"SPY"},{"data":[[1359590400000,0.03728467563384252],[1362009600000,-0.01288592960426715],[1364688000000,0.0130541443899197],[1367280000000,0.0501865817595446],[1369958400000,-0.03019057966392014],[1372550400000,-0.02677948952944698],[1375228800000,0.05322869730776003],[1377907200000,-0.01955251078033515],[1380499200000,0.07824914292009022],[1383177600000,0.03260156365555611],[1385769600000,0.005464694309782914],[1388448000000,0.0217615389591701],[1391126400000,-0.05201181744941985],[1393545600000,0.06131079974246001],[1396224000000,-0.004591678440443836],[1398816000000,0.01666651578040779],[1401494400000,0.01595449381167535],[1404086400000,0.009207516062460286],[1406764800000,-0.02603502066727914],[1409443200000,0.001802231286873068],[1412035200000,-0.0388248339931222],[1414713600000,-0.002651259494172775],[1417305600000,0.0006254657246187456],[1419984000000,-0.03992782008451923],[1422662400000,0.006246005430948776],[1425081600000,0.06337795112249411],[1427760000000,-0.01428581730157963],[1430352000000,0.03646590243334469],[1433030400000,0.001954388197739076],[1435622400000,-0.03118222480601762],[1438300800000,0.02031810504266129],[1440979200000,-0.07425128678490744],[1443571200000,-0.04418889636989509],[1446249600000,0.06612025735461491],[1448841600000,-0.007527427585655166],[1451520000000,-0.02331890612609733],[1454198400000,-0.05517696876842215],[1456704000000,-0.03334539357410571],[1459382400000,0.06582133447011973],[1461974400000,0.02221813770106285],[1464652800000,-0.000855759579375226],[1467244800000,-0.0241936861317934],[1469923200000,0.03977046482462732],[1472601600000,0.005341194985943654],[1475193600000,0.01336742817033731],[1477872000000,-0.02215444634758645],[1480464000000,-0.01781398291860625],[1483142400000,0.02706282274169425],[1485820800000,0.03291170504260177],[1488240000000,0.01190696866901408],[1490918400000,0.03231686487922825],[1493510400000,0.02424128831865158],[1496188800000,0.03542316576860016],[1498780800000,0.002960369660072404],[1501459200000,0.02653373088931277],[1504137600000,-0.0004482670248223686],[1506729600000,0.02361734775605506],[1509408000000,0.01679326585628416],[1512000000000,0.006893497230676893],[1514678400000,0.01348866988975206]],"name":"EFA"},{"data":[[1359590400000,0.05351636851301023],[1362009600000,0.01630662474037892],[1364688000000,0.04107952613540178],[1367280000000,0.001223224877597406],[1369958400000,0.0428696319363393],[1372550400000,-0.001401956373801694],[1375228800000,0.06560364534665952],[1377907200000,-0.03414696854251753],[1380499200000,0.06595780976704835],[1383177600000,0.03482680918906911],[1385769600000,0.04254108049697392],[1388448000000,0.01297552681675374],[1391126400000,-0.03514290076670801],[1393545600000,0.04629722445348761],[1396224000000,0.01340427695198443],[1398816000000,-0.02291746084391499],[1401494400000,0.006224558596505059],[1404086400000,0.03843903608565502],[1406764800000,-0.05068000687124175],[1409443200000,0.04462489549455362],[1412035200000,-0.05942168231407463],[1414713600000,0.07130220814828148],[1417305600000,0.004784802041904124],[1419984000000,0.02561861937473164],[1422662400000,-0.05316262327112253],[1425081600000,0.05856514153228121],[1427760000000,0.01020850209179414],[1430352000000,-0.01824953176733313],[1433030400000,0.007538427875199538],[1435622400000,0.004180191734513228],[1438300800000,-0.02700451465480913],[1440979200000,-0.04616829684146562],[1443571200000,-0.03773443461350989],[1446249600000,0.06565518101022816],[1448841600000,0.02471578315370659],[1451520000000,-0.05082036278401103],[1454198400000,-0.05852418930473069],[1456704000000,0.02081870768896277],[1459382400000,0.0940761616627861],[1461974400000,0.0212674397294661],[1464652800000,0.004406788015722807],[1467244800000,0.008326620528831041],[1469923200000,0.05058631551821802],[1472601600000,0.01132480862013985],[1475193600000,0.008651655047328122],[1477872000000,-0.03741666219024264],[1480464000000,0.133427786308115],[1483142400000,0.03199271537749682],[1485820800000,-0.01207053040628148],[1488240000000,0.01351974111884635],[1490918400000,-0.006511966364222022],[1493510400000,0.005120860528506466],[1496188800000,-0.02260351733774868],[1498780800000,0.02958090752741382],[1501459200000,0.007509737424131524],[1504137600000,-0.02718808677207807],[1506729600000,0.08580497766666095],[1509408000000,0.005933591168432839],[1512000000000,0.03760291167782381],[1514678400000,-0.003723916609913225]],"name":"IJS"}],"navigator":{"enabled":false},"scrollbar":{"enabled":false}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"stock","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -509,12 +575,12 @@ window.Quarto = {
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(spy)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                   SPY
-2013-01-31  0.05119017
-2013-02-28  0.01275838
-2013-03-31  0.03797140
-2013-04-30  0.01921232
-2013-05-31  0.02360992
-2013-06-30 -0.01334433</code></pre>
+2013-01-31  0.05119037
+2013-02-28  0.01275894
+2013-03-31  0.03797070
+2013-04-30  0.01921268
+2013-05-31  0.02360922
+2013-06-30 -0.01334411</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>hc1<span class="ot">&lt;-</span><span class="fu">highchart</span>(<span class="at">type =</span> <span class="st">"stock"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hc_title</span>(<span class="at">text =</span> <span class="st">"Monthly Returns SPY x Portfolio"</span>) <span class="sc">%&gt;%</span></span>
@@ -533,8 +599,8 @@ window.Quarto = {
 <span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hc_exporting</span>(<span class="at">enabled =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>hc1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="highchart html-widget html-fill-item" id="htmlwidget-700635a2d6b7d25f0d40" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-700635a2d6b7d25f0d40">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Monthly Returns SPY x Portfolio"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"data":[[1359590400000,0.03161447230926595],[1362009600000,-0.0007476460050300782],[1364688000000,0.01903427269242108],[1367280000000,0.02099451994497192],[1369958400000,-0.004728073520531284],[1372550400000,-0.02252832842413632],[1375228800000,0.04226544216614747],[1377907200000,-0.02511761914928456],[1380499200000,0.05619967301483109],[1383177600000,0.03586649891862992],[1385769600000,0.01651506558262716],[1388448000000,0.01314708052017277],[1391126400000,-0.04457535134449286],[1393545600000,0.04309815145627827],[1396224000000,0.01120943712363665],[1398816000000,0.003703421201891821],[1401494400000,0.01811788564839656],[1404086400000,0.01989683588170021],[1406764800000,-0.01752547485406675],[1409443200000,0.02605070618037497],[1412035200000,-0.04118942822232152],[1414713600000,0.02338872596091779],[1417305600000,0.005554218829501245],[1419984000000,-0.01327188923833789],[1422662400000,-0.01580051761521906],[1425081600000,0.04952995205342692],[1427760000000,-0.008076091422356324],[1430352000000,0.0213077777719346],[1433030400000,-0.003436055400981353],[1435622400000,-0.01897604317953561],[1438300800000,-0.006431650118456034],[1440979200000,-0.06104223600097813],[1443571200000,-0.03042648690174221],[1446249600000,0.06374625887346896],[1448841600000,-0.00146140279491469],[1451520000000,-0.02814570990015142],[1454198400000,-0.04677038287520241],[1456704000000,-0.005127660444214532],[1459382400000,0.0788852367306585],[1461974400000,0.01186590187154368],[1464652800000,-0.002451995281528174],[1467244800000,0.007539129872279338],[1469923200000,0.04049051208696852],[1472601600000,0.005451771051217413],[1475193600000,0.01017539451849281],[1477872000000,-0.0198291785958189],[1480464000000,0.02004485190250715],[1483142400000,0.0179809350830662],[1485820800000,0.02381101453751455],[1488240000000,0.01963062445228214],[1490918400000,0.01440454652104539],[1493510400000,0.01387489195064462],[1496188800000,0.01424197618327194],[1498780800000,0.01008496403701975],[1501459200000,0.02525322164961885],[1504137600000,0.0008241923233878179],[1506729600000,0.02744202831981624],[1509408000000,0.01793478686330841],[1512000000000,0.0159593695765532],[1514678400000,0.01365754151555643]],"name":"portifolio","color":"darkblue"},{"data":[[1359590400000,0.05119016659448605],[1362009600000,0.01275837891950471],[1364688000000,0.03797140316414782],[1367280000000,0.01921232293661057],[1369958400000,0.02360992307099186],[1372550400000,-0.01334433414509906],[1375228800000,0.0516762970529494],[1377907200000,-0.02999222661301071],[1380499200000,0.03164667459360127],[1383177600000,0.04630641336422636],[1385769600000,0.029637966452988],[1388448000000,0.02592634510577096],[1391126400000,-0.03524807094218174],[1393545600000,0.04551573399852682],[1396224000000,0.008295255331314033],[1398816000000,0.006951620524957125],[1401494400000,0.02320643665170552],[1404086400000,0.02064484252767618],[1406764800000,-0.01343757848212268],[1409443200000,0.03946383748891402],[1412035200000,-0.01379672362443796],[1414713600000,0.02355111812316668],[1417305600000,0.02747174588915335],[1419984000000,-0.002536351594058073],[1422662400000,-0.02962946043627901],[1425081600000,0.0562047040998539],[1427760000000,-0.01570553978603262],[1430352000000,0.00983389684210989],[1433030400000,0.01285603653002565],[1435622400000,-0.02031213291389922],[1438300800000,0.02258947277292012],[1440979200000,-0.06095023751831941],[1443571200000,-0.02551597815036089],[1446249600000,0.0850598317989284],[1448841600000,0.003654896154855924],[1451520000000,-0.0172823719636066],[1454198400000,-0.04978644182199432],[1456704000000,-0.0008264276346338084],[1459382400000,0.06726615534612113],[1461974400000,0.003941364535056113],[1464652800000,0.01701137360387794],[1467244800000,0.003475947446348382],[1469923200000,0.03647119461495674],[1472601600000,0.001197905164247892],[1475193600000,5.785368137978253e-05],[1477872000000,-0.01733744838301898],[1480464000000,0.03683871671001704],[1483142400000,0.02027179580105432],[1485820800000,0.01789490340159161],[1488240000000,0.03929110059259711],[1490918400000,0.001250283276425179],[1493510400000,0.009926086674541645],[1496188800000,0.01411287820429741],[1498780800000,0.006374836486326307],[1501459200000,0.02055424575574305],[1504137600000,0.002917709130371371],[1506729600000,0.02014937827207053],[1509408000000,0.02356403807600582],[1512000000000,0.03056601706658846],[1514678400000,0.01212804695186698]],"name":"SPY","color":"red"}],"navigator":{"enabled":false},"scrollbar":{"enabled":false},"legend":{"enabled":true}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"stock","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div class="highchart html-widget html-fill-item" id="htmlwidget-c57d13f6f05b73441811" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-c57d13f6f05b73441811">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Monthly Returns SPY x Portfolio"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"data":[[1359590400000,0.03161466791545875],[1362009600000,-0.000747669149358865],[1364688000000,0.01903413278483757],[1367280000000,0.02099466686608742],[1369958400000,-0.004728401923726921],[1372550400000,-0.0225282325138334],[1375228800000,0.04226558813495407],[1377907200000,-0.02511768978129592],[1380499200000,0.05619967468842524],[1383177600000,0.03586647448736313],[1385769600000,0.01651501537642552],[1388448000000,0.01314713017163793],[1391126400000,-0.04457529147047257],[1393545600000,0.04309810027377026],[1396224000000,0.01120947289056606],[1398816000000,0.003703385137707516],[1401494400000,0.01811783930574351],[1404086400000,0.01989695918811529],[1406764800000,-0.01752558297285856],[1409443200000,0.0260506596315111],[1412035200000,-0.04118935954219816],[1414713600000,0.02338875125099671],[1417305600000,0.005554138846135093],[1419984000000,-0.01327178168502652],[1422662400000,-0.01580052381207353],[1425081600000,0.04952990509104049],[1427760000000,-0.008076014768906847],[1430352000000,0.02130766505701898],[1433030400000,-0.003435993600032217],[1435622400000,-0.01897600182528136],[1438300800000,-0.006431800984751379],[1440979200000,-0.06104215079386932],[1443571200000,-0.03042653248339799],[1446249600000,0.06374628654028136],[1448841600000,-0.001461279766608814],[1451520000000,-0.02814583307097751],[1454198400000,-0.04677041562672946],[1456704000000,-0.005127589498554963],[1459382400000,0.07888530710086017],[1461974400000,0.01186578095773538],[1464652800000,-0.002452006513880223],[1467244800000,0.007539187437732853],[1469923200000,0.04049055992057204],[1472601600000,0.005451611945791024],[1475193600000,0.01017529063627731],[1477872000000,-0.01982890337014009],[1480464000000,0.02004470687669802],[1483142400000,0.01798100858477136],[1485820800000,0.02381083770367876],[1488240000000,0.01963097391795965],[1490918400000,0.01440436744623619],[1493510400000,0.01387493203151879],[1496188800000,0.0142418597180145],[1498780800000,0.01008495424820177],[1501459200000,0.02525344238118721],[1504137600000,0.0008242304985632831],[1506729600000,0.02744178008664733],[1509408000000,0.01793498999224008],[1512000000000,0.01595930321079453],[1514678400000,0.0136576212081303]],"name":"portifolio","color":"darkblue"},{"data":[[1359590400000,0.05119037374773128],[1362009600000,0.01275894132600452],[1364688000000,0.03797070335192476],[1367280000000,0.01921268189184522],[1369958400000,0.02360921766754998],[1372550400000,-0.01334411231043819],[1375228800000,0.05167677099010048],[1377907200000,-0.02999265932364736],[1380499200000,0.03164690820046157],[1383177600000,0.04630652311144789],[1385769600000,0.02963785845413347],[1388448000000,0.02592624323488146],[1391126400000,-0.03524787584918365],[1393545600000,0.04551542054073998],[1396224000000,0.008295453851874246],[1398816000000,0.006951718158705544],[1401494400000,0.02320643440161607],[1404086400000,0.02064493533201239],[1406764800000,-0.0134380402064217],[1409443200000,0.03946384863056562],[1412035200000,-0.01379654630042826],[1414713600000,0.02355121208741218],[1417305600000,0.02747183557904864],[1419984000000,-0.002536264080826633],[1422662400000,-0.02962971779166657],[1425081600000,0.05620461898275808],[1427760000000,-0.01570537169445141],[1430352000000,0.00983389684210989],[1433030400000,0.01285620833900669],[1435622400000,-0.0203123839106969],[1438300800000,0.02258956130114798],[1440979200000,-0.06095006819799409],[1443571200000,-0.02551615385981576],[1446249600000,0.08505964676738786],[1448841600000,0.003655152568024178],[1451520000000,-0.01728262535378589],[1454198400000,-0.04978662332338557],[1456704000000,-0.000825973054300766],[1459382400000,0.06726614922144214],[1461974400000,0.003941278886047339],[1464652800000,0.01701145858171649],[1467244800000,0.003475780043066701],[1469923200000,0.03647153071982068],[1472601600000,0.001197342516601196],[1475193600000,5.793394086395232e-05],[1477872000000,-0.01733689090242696],[1480464000000,0.03683829641893732],[1483142400000,0.02027195489909572],[1485820800000,0.01789474764815902],[1488240000000,0.0392913310594698],[1490918400000,0.001250137169247045],[1493510400000,0.009926159545808],[1496188800000,0.01411273287589432],[1498780800000,0.006374908090811982],[1501459200000,0.02055452855655426],[1504137600000,0.002917639045597609],[1506729600000,0.020149097797725],[1509408000000,0.02356417509238251],[1512000000000,0.03056608119621163],[1514678400000,0.01212804539487822]],"name":"SPY","color":"red"}],"navigator":{"enabled":false},"scrollbar":{"enabled":false},"legend":{"enabled":true}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"stock","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Agora um histograma dos retornos do portfólio</p>
@@ -549,8 +615,8 @@ window.Quarto = {
 <span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hc_add_theme</span>(<span class="fu">hc_theme_flat</span>()) <span class="sc">%&gt;%</span></span>
 <span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hc_exporting</span>(<span class="at">enabled =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="highchart html-widget html-fill-item" id="htmlwidget-3105c89eb7c4bc47c0de" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-3105c89eb7c4bc47c0de">{"x":{"hc_opts":{"chart":{"reflow":true,"zoomType":"x"},"title":{"text":"Portifolio Monthly Returns"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"tooltip":{"formatter":"function() { return  this.point.name + '<br/>' + this.y; }"},"series":[{"data":[{"x":-0.061,"y":1,"name":"(-0.062, -0.06]"},{"x":-0.059,"y":0,"name":"(-0.06, -0.058]"},{"x":-0.057,"y":0,"name":"(-0.058, -0.056]"},{"x":-0.055,"y":0,"name":"(-0.056, -0.054]"},{"x":-0.053,"y":0,"name":"(-0.054, -0.052]"},{"x":-0.051,"y":0,"name":"(-0.052, -0.05]"},{"x":-0.049,"y":0,"name":"(-0.05, -0.048]"},{"x":-0.047,"y":1,"name":"(-0.048, -0.046]"},{"x":-0.045,"y":1,"name":"(-0.046, -0.044]"},{"x":-0.043,"y":0,"name":"(-0.044, -0.042]"},{"x":-0.04099999999999999,"y":1,"name":"(-0.042, -0.04]"},{"x":-0.039,"y":0,"name":"(-0.04, -0.038]"},{"x":-0.037,"y":0,"name":"(-0.038, -0.036]"},{"x":-0.035,"y":0,"name":"(-0.036, -0.034]"},{"x":-0.033,"y":0,"name":"(-0.034, -0.032]"},{"x":-0.031,"y":1,"name":"(-0.032, -0.03]"},{"x":-0.029,"y":1,"name":"(-0.03, -0.028]"},{"x":-0.027,"y":0,"name":"(-0.028, -0.026]"},{"x":-0.025,"y":1,"name":"(-0.026, -0.024]"},{"x":-0.023,"y":1,"name":"(-0.024, -0.022]"},{"x":-0.021,"y":0,"name":"(-0.022, -0.02]"},{"x":-0.019,"y":2,"name":"(-0.02, -0.018]"},{"x":-0.017,"y":1,"name":"(-0.018, -0.016]"},{"x":-0.015,"y":1,"name":"(-0.016, -0.014]"},{"x":-0.013,"y":1,"name":"(-0.014, -0.012]"},{"x":-0.011,"y":0,"name":"(-0.012, -0.01]"},{"x":-0.008999999999999998,"y":1,"name":"(-0.01, -0.008]"},{"x":-0.006999999999999999,"y":1,"name":"(-0.008, -0.006]"},{"x":-0.004999999999999998,"y":2,"name":"(-0.006, -0.004]"},{"x":-0.002999999999999999,"y":2,"name":"(-0.004, -0.002]"},{"x":-0.001000000000000001,"y":2,"name":"(-0.002, 0]"},{"x":0.001000000000000001,"y":1,"name":"(0, 0.002]"},{"x":0.003000000000000003,"y":1,"name":"(0.002, 0.004]"},{"x":0.005000000000000004,"y":2,"name":"(0.004, 0.00600000000000001]"},{"x":0.007000000000000006,"y":1,"name":"(0.00600000000000001, 0.00800000000000001]"},{"x":0.009000000000000008,"y":0,"name":"(0.00800000000000001, 0.01]"},{"x":0.011,"y":4,"name":"(0.01, 0.012]"},{"x":0.013,"y":3,"name":"(0.012, 0.014]"},{"x":0.015,"y":3,"name":"(0.014, 0.016]"},{"x":0.017,"y":3,"name":"(0.016, 0.018]"},{"x":0.019,"y":4,"name":"(0.018, 0.02]"},{"x":0.021,"y":3,"name":"(0.02, 0.022]"},{"x":0.02300000000000001,"y":2,"name":"(0.022, 0.024]"},{"x":0.025,"y":1,"name":"(0.024, 0.026]"},{"x":0.027,"y":2,"name":"(0.026, 0.028]"},{"x":0.029,"y":0,"name":"(0.028, 0.03]"},{"x":0.031,"y":1,"name":"(0.03, 0.032]"},{"x":0.033,"y":0,"name":"(0.032, 0.034]"},{"x":0.035,"y":1,"name":"(0.034, 0.036]"},{"x":0.03700000000000001,"y":0,"name":"(0.036, 0.038]"},{"x":0.03900000000000001,"y":0,"name":"(0.038, 0.04]"},{"x":0.04100000000000001,"y":1,"name":"(0.04, 0.042]"},{"x":0.043,"y":2,"name":"(0.042, 0.044]"},{"x":0.045,"y":0,"name":"(0.044, 0.046]"},{"x":0.047,"y":0,"name":"(0.046, 0.048]"},{"x":0.049,"y":1,"name":"(0.048, 0.05]"},{"x":0.051,"y":0,"name":"(0.05, 0.052]"},{"x":0.05300000000000001,"y":0,"name":"(0.052, 0.054]"},{"x":0.05500000000000001,"y":0,"name":"(0.054, 0.056]"},{"x":0.057,"y":1,"name":"(0.056, 0.058]"},{"x":0.059,"y":0,"name":"(0.058, 0.06]"},{"x":0.061,"y":0,"name":"(0.06, 0.062]"},{"x":0.063,"y":1,"name":"(0.062, 0.064]"},{"x":0.065,"y":0,"name":"(0.064, 0.066]"},{"x":0.067,"y":0,"name":"(0.066, 0.068]"},{"x":0.06900000000000001,"y":0,"name":"(0.068, 0.07]"},{"x":0.07100000000000001,"y":0,"name":"(0.07, 0.072]"},{"x":0.07300000000000001,"y":0,"name":"(0.072, 0.074]"},{"x":0.07500000000000001,"y":0,"name":"(0.074, 0.076]"},{"x":0.07700000000000001,"y":0,"name":"(0.076, 0.078]"},{"x":0.07900000000000001,"y":1,"name":"(0.078, 0.08]"}],"type":"column","pointRange":0.002000000000000002,"groupPadding":0,"pointPadding":0,"borderWidth":0,"color":"red","name":"Returns"}]},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
+<div class="highchart html-widget html-fill-item" id="htmlwidget-af88cd944ad6e44b9561" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-af88cd944ad6e44b9561">{"x":{"hc_opts":{"chart":{"reflow":true,"zoomType":"x"},"title":{"text":"Portifolio Monthly Returns"},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"tooltip":{"formatter":"function() { return  this.point.name + '<br/>' + this.y; }"},"series":[{"data":[{"x":-0.061,"y":1,"name":"(-0.062, -0.06]"},{"x":-0.059,"y":0,"name":"(-0.06, -0.058]"},{"x":-0.057,"y":0,"name":"(-0.058, -0.056]"},{"x":-0.055,"y":0,"name":"(-0.056, -0.054]"},{"x":-0.053,"y":0,"name":"(-0.054, -0.052]"},{"x":-0.051,"y":0,"name":"(-0.052, -0.05]"},{"x":-0.049,"y":0,"name":"(-0.05, -0.048]"},{"x":-0.047,"y":1,"name":"(-0.048, -0.046]"},{"x":-0.045,"y":1,"name":"(-0.046, -0.044]"},{"x":-0.043,"y":0,"name":"(-0.044, -0.042]"},{"x":-0.04099999999999999,"y":1,"name":"(-0.042, -0.04]"},{"x":-0.039,"y":0,"name":"(-0.04, -0.038]"},{"x":-0.037,"y":0,"name":"(-0.038, -0.036]"},{"x":-0.035,"y":0,"name":"(-0.036, -0.034]"},{"x":-0.033,"y":0,"name":"(-0.034, -0.032]"},{"x":-0.031,"y":1,"name":"(-0.032, -0.03]"},{"x":-0.029,"y":1,"name":"(-0.03, -0.028]"},{"x":-0.027,"y":0,"name":"(-0.028, -0.026]"},{"x":-0.025,"y":1,"name":"(-0.026, -0.024]"},{"x":-0.023,"y":1,"name":"(-0.024, -0.022]"},{"x":-0.021,"y":0,"name":"(-0.022, -0.02]"},{"x":-0.019,"y":2,"name":"(-0.02, -0.018]"},{"x":-0.017,"y":1,"name":"(-0.018, -0.016]"},{"x":-0.015,"y":1,"name":"(-0.016, -0.014]"},{"x":-0.013,"y":1,"name":"(-0.014, -0.012]"},{"x":-0.011,"y":0,"name":"(-0.012, -0.01]"},{"x":-0.008999999999999998,"y":1,"name":"(-0.01, -0.008]"},{"x":-0.006999999999999999,"y":1,"name":"(-0.008, -0.006]"},{"x":-0.004999999999999998,"y":2,"name":"(-0.006, -0.004]"},{"x":-0.002999999999999999,"y":2,"name":"(-0.004, -0.002]"},{"x":-0.001000000000000001,"y":2,"name":"(-0.002, 0]"},{"x":0.001000000000000001,"y":1,"name":"(0, 0.002]"},{"x":0.003000000000000003,"y":1,"name":"(0.002, 0.004]"},{"x":0.005000000000000004,"y":2,"name":"(0.004, 0.00600000000000001]"},{"x":0.007000000000000006,"y":1,"name":"(0.00600000000000001, 0.00800000000000001]"},{"x":0.009000000000000008,"y":0,"name":"(0.00800000000000001, 0.01]"},{"x":0.011,"y":4,"name":"(0.01, 0.012]"},{"x":0.013,"y":3,"name":"(0.012, 0.014]"},{"x":0.015,"y":3,"name":"(0.014, 0.016]"},{"x":0.017,"y":3,"name":"(0.016, 0.018]"},{"x":0.019,"y":4,"name":"(0.018, 0.02]"},{"x":0.021,"y":3,"name":"(0.02, 0.022]"},{"x":0.02300000000000001,"y":2,"name":"(0.022, 0.024]"},{"x":0.025,"y":1,"name":"(0.024, 0.026]"},{"x":0.027,"y":2,"name":"(0.026, 0.028]"},{"x":0.029,"y":0,"name":"(0.028, 0.03]"},{"x":0.031,"y":1,"name":"(0.03, 0.032]"},{"x":0.033,"y":0,"name":"(0.032, 0.034]"},{"x":0.035,"y":1,"name":"(0.034, 0.036]"},{"x":0.03700000000000001,"y":0,"name":"(0.036, 0.038]"},{"x":0.03900000000000001,"y":0,"name":"(0.038, 0.04]"},{"x":0.04100000000000001,"y":1,"name":"(0.04, 0.042]"},{"x":0.043,"y":2,"name":"(0.042, 0.044]"},{"x":0.045,"y":0,"name":"(0.044, 0.046]"},{"x":0.047,"y":0,"name":"(0.046, 0.048]"},{"x":0.049,"y":1,"name":"(0.048, 0.05]"},{"x":0.051,"y":0,"name":"(0.05, 0.052]"},{"x":0.05300000000000001,"y":0,"name":"(0.052, 0.054]"},{"x":0.05500000000000001,"y":0,"name":"(0.054, 0.056]"},{"x":0.057,"y":1,"name":"(0.056, 0.058]"},{"x":0.059,"y":0,"name":"(0.058, 0.06]"},{"x":0.061,"y":0,"name":"(0.06, 0.062]"},{"x":0.063,"y":1,"name":"(0.062, 0.064]"},{"x":0.065,"y":0,"name":"(0.064, 0.066]"},{"x":0.067,"y":0,"name":"(0.066, 0.068]"},{"x":0.06900000000000001,"y":0,"name":"(0.068, 0.07]"},{"x":0.07100000000000001,"y":0,"name":"(0.07, 0.072]"},{"x":0.07300000000000001,"y":0,"name":"(0.072, 0.074]"},{"x":0.07500000000000001,"y":0,"name":"(0.074, 0.076]"},{"x":0.07700000000000001,"y":0,"name":"(0.076, 0.078]"},{"x":0.07900000000000001,"y":1,"name":"(0.078, 0.08]"}],"type":"column","pointRange":0.002000000000000002,"groupPadding":0,"pointPadding":0,"borderWidth":0,"color":"red","name":"Returns"}]},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.formatter"],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -569,7 +635,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="finance_with_R_2_files/figure-html/ggplot%20scaterplot-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="finance_with_R_2_files/figure-html/ggplot scaterplot-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -587,7 +653,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="finance_with_R_2_files/figure-html/histogram%20with%20all%20assets%20returns%20and%20portfolio-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="finance_with_R_2_files/figure-html/histogram with all assets returns and portfolio-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -599,10 +665,11 @@ window.Quarto = {
 <li>Coloque num único gráfico utilizando ggplot2::geom_histogram() o histograma de todos os ativos e do portfolio utilize alpha = 0.20 para os ativos.</li>
 <li>Adicione ao gráfico anterior a densidade do retorno do portifólio em preto.</li>
 </ol>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -623,6 +690,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

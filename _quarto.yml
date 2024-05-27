@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Finanças com R 2"
+
+  navbar:
+    left:
+      - href: finance_with_R_2.qmd
+        text: Home
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
