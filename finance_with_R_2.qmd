@@ -5,22 +5,29 @@ date: today
 format: html
 execute: 
   echo: true
+  wanings: false
+  message: false
+  error: false
   
 ---
 ### Inicialização
 
 Iniciamos em um arquivo R Markdown e carregamos os pacotes.
 
-```{r carregar pacotes, warning=FALSE, message=FALSE}
-library(lubridate)
-library(readxl)
-library(highcharter)
-library(tidyquant)
-library(tibbletime)
-library(quantmod)
-library(PerformanceAnalytics)
-library(scales)
-library(timetk)
+```{r carregar pacotes}
+#| warning: false
+#| message: false
+#| error: false 
+
+# Lista de pacotes
+packages <- c("tidyverse", "highcharter", "quantmod", "PerformanceAnalytics", "scales", "timetk","tidyquant")
+
+# Instala pacotes que ainda não estão instalados
+new_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+if(length(new_packages)) install.packages(new_packages)
+
+# Carrega os pacotes
+lista<-lapply(packages, require, character.only = TRUE)
 ```
 
 ### Bibliografia:
@@ -49,7 +56,7 @@ Picerno, James; **Quantitative investment Portfoilo Analytic in R**,LLC, 2018.
 
 Na aula 1 fizemos a importação dos ativos e montamos o arquivo de classe xts, *asset_returns_xts*, direto do Yahoo.com, com o mesmo conjunto de ativos da aula anterior (vetor symbols).
 
-```{r asset_returns_long, warning=FALSE,error=FALSE,message=FALSE}
+```{r asset_returns_long}
 
 symbols <- c("SPY","EFA", "IJS", "EEM","AGG")
 prices <- 
@@ -107,7 +114,7 @@ $$ \bar{k}=\sum_{i=i}^n{w_i*k_i}$$
 
 Continuando de onde paramos **no ambiente xts** **asset_monthly_returns_xts** quando calculamos os retornos mensais dos ativos:
 
-```{r retornos do portifólio, }
+```{r retornos do portifólio }
 portfolio_returns_xts_rebalanced_monthly<-Return.portfolio(asset_monthly_returns_xts,
                  weights = w,
                  rebalance_on = "months",
@@ -135,7 +142,7 @@ head(asset_monthly_returns_long_tbl, 3)
 
 Depois adicionamos a cada observação seu respectivo peso utilizando a função *dplyr::case_when( )*, digite no console: ?case_when e entenda sua operação.
 
-```{r atribuir pesos w,}
+```{r atribuir pesos w}
   asset_monthly_returns_long_with_weights_tbl<-
   asset_monthly_returns_long_tbl %>% 
   group_by(asset) %>% 
@@ -163,7 +170,7 @@ head(portifolio_monthly_returns_dplyr_byhand, 4)
 
 Obtenha a partir do arquivo *prices* um arquivo organizado da forma longa de log retornos diários dos ativos na classe tibble sendo que as colunas devem ser denominadas *date* *asset* e *returns* e denomine o arquivo de: *assets_daily_returns_long*.
 
-```{r exercise 3, solution, echo=FALSE}
+```{r exercise 3, solution}
 #computing returns departing from prices 
 assets_daily_returns_long <-
   Return.calculate(prices, 
@@ -184,7 +191,7 @@ Como obteria os retornos mensais no ambiente tidyverse a partir dos log-retornos
 
 No ambiente tidyquant partiremos do arquivo *asset_monthly_returns_long_tbl * obtido quando convertemos o arquivo *xts* para *tibble*.
 
-```{r retorno do portifolio no tidyquant,  }
+```{r retorno do portifolio no tidyquant}
 # using tibbletime
 portfolio_tq_rebalanced_monthly<-
   asset_monthly_returns_long_tbl %>% 
@@ -333,7 +340,7 @@ q<-portfolio_tq_rebalanced_monthly %>% slice(-1) %>%
  q1
 ```
 
-###Exercício 5
+### Exercício 5
 
 a. Coloque num único gráfico utilizando ggplot2::geom_histogram() o histograma de todos os ativos e do portfolio utilize alpha = 0.20 para os ativos.
 b. Adicione ao gráfico anterior a densidade do retorno do portifólio em preto.
